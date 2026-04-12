@@ -15,3 +15,14 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc && echo -e "
 sudo dnf check-update 
 sudo dnf install code # or code-insiders
 
+
+# Containerization Tools
+
+sudo dnf install docker docker-compose kubernetes
+
+
+# AI Tools
+
+curl -fsSL https://claude.ai/install.sh | bash
+
+
