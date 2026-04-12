@@ -4,6 +4,7 @@
 # Linux
 alias ll="ls -alF"
 alias c="clear"
+alias zsh="source ~/.zshrc"
 
 # Package Management
 alias update="sudo apt update && sudo apt upgrade"
