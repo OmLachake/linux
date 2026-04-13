@@ -28,4 +28,5 @@ sudo usermod -aG docker $USER
 curl -fsSL https://claude.ai/install.sh | bash
 
 # Other tools
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub md.obsidian.Obsidian -y
