@@ -19,10 +19,9 @@ curl -fLo ~/.local/share/fonts/"MesloLGS NF Italic.ttf" https://github.com/romka
 curl -fLo ~/.local/share/fonts/"MesloLGS NF Bold Italic.ttf" https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 fc-cache -fv
 
-# Set theme and plugins in .zshrc
-sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k\/powerlevel10k"/' ~/.zshrc
-sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
-
 # Set font in Ghostty config
 mkdir -p ~/.config/ghostty
 echo "font-family = MesloLGS NF" >> ~/.config/ghostty/config.ghostty
+
+# Link custom zshrc
+ln -sf "$(cd "$(dirname "$0")" && pwd)/.zshrc" ~/.zshrc
