@@ -7,7 +7,7 @@ alias c="clear"
 alias zsh="source ~/.zshrc"
 
 # Package Management
-alias update="sudo apt update && sudo apt upgrade"
+alias update="sudo apt update -y && sudo apt upgrade -y"
 
 # Git 
 
